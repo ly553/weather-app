@@ -1,0 +1,7 @@
+<!-- 实时天气更新板的外层容器 -->
+<div class="container-end">
+<!-- 显示最后更新时间的文本 -->
+    <text class="end">{{ time }}</text>
+<!-- 显示数据来源的文本 -->
+    <text class="end">{{ end }}</text>
+</div>

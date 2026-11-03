@@ -1,0 +1,30 @@
+/* 标题组件的最外层容器样式 */
+.container {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    left: 0px; /* 容器左对齐 */
+    top: 0px; /* 容器顶部对齐 */
+    width: 100%; /* 容器宽度占满父元素 */
+    height: 100px; /* 容器高度设置为100px */
+}
+
+/* 添加图标容器的样式 */
+.add {
+    top: 25px; /* 距顶部25px */
+    left: 10px; /* 距左侧10px */
+    width: 8%; /* 宽度占父元素的8% */
+    font-size: 60px; /* 字体大小设置为60px */
+    text-color: #000000; /* 文字颜色为黑色 */
+    height: 45px; /* 高度设置为45px */
+}
+
+/* 标题文本的样式 */
+.title {
+    margin-top: 12px; /* 上边距为12px */
+    position: absolute; /* 绝对定位 */
+    font-size: 38px; /* 字体大小为38px */
+    text-align: center; /* 文本居中对齐 */
+    width: 100%; /* 宽度占满父元素 */
+    color: white; /* 文字颜色为白色 */
+    line-height: 70px; /* 行高为70px */
+}

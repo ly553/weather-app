@@ -1,0 +1,22 @@
+<!-- 云量展示组件的最外层容器 -->
+<div class="container-rain">
+<!-- 显示标题的文本区域 -->
+    <div class="barText">
+        <text class="text">{{ title }}</text>
+    </div>
+<!-- 如果当前有降雨，则显示降雨量统计图 -->
+    <div class="bar" if="{{ isRain }}">
+        <stack class="data-region">
+        <!-- 统计图组件，用于展示降雨量的柱状图 -->
+            <chart class="chart-bar" type="bar" id="bar-chart" options="{{ rainBarOps }}" datasets="{{ rainBarData }}">
+            </chart>
+        </stack>
+    </div>
+<!-- 如果当前没有降雨，则显示云量信息 -->
+    <div class="cloud" else>
+    <!-- 云量图标 -->
+        <image class="img" src="{{ clouds }}"></image>
+    <!-- 云量百分比 -->
+        <text>{{ cloud }}</text>
+    </div>
+</div>

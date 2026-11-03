@@ -1,0 +1,70 @@
+.container {
+    flex-direction: column;
+    padding: 40px;
+}
+
+.header {
+    flex-direction: column;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.city-name {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px; /* 增加底部间距 */
+}
+
+.weather-info {
+    font-size: 32px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.update-time {
+    font-size: 24px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.living-index-list {
+    width: 100%;
+}
+
+.index-item {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.index-card {
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 15px 0;
+    width: 100%;
+}
+
+.index-name {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.index-brief {
+    font-size: 28px;
+    color: #0078FF;
+    margin-bottom: 20px;
+    font-weight: 500; /* 增加字体重量 */
+}
+
+.index-detail {
+    font-size: 28px;
+    color: #666;
+    line-height: 42px;
+    padding: 10px 0; /* 添加上下内边距 */
+}

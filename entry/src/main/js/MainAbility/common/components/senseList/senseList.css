@@ -1,0 +1,39 @@
+/* 外层容器的样式 */
+.container {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    left: 0px; /* 容器左对齐 */
+    top: 0px; /* 容器顶部对齐 */
+    width: 90%; /* 宽度设置为47% */
+    height: 400px; /* 高度设置为400px */
+    border-radius: 30px; /* 圆角边框 */
+    background-color: rgba(225, 225, 225, 0.5); /* 半透明背景色 */
+    backdrop-filter: blur(4px); /* 背景模糊效果 */
+}
+
+/* 列表的样式 */
+list {
+    height: 85%; /* 高度设置为85% */
+    justify-content: center; /* 在主轴方向居中对齐 */
+}
+
+/* 列表项的样式 */
+list-item {
+    height: 24%; /* 高度设置为24% */
+}
+
+/* 文本区域的样式 */
+.text {
+    padding-left: 20px; /* 左内边距 */
+    flex-direction: row; /* 子元素水平排列 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: flex-start; /* 在交叉轴方向靠起始边界对齐 */
+}
+
+/* 文本元素的样式 */
+.text > text {
+    line-height: 60px; /* 行高设置为60px */
+    width: 50%; /* 宽度设置为50% */
+}

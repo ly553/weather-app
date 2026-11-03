@@ -1,0 +1,47 @@
+/* 整周天气信息容器的样式 */
+.container {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    left: 0px; /* 容器左对齐 */
+    top: 0px; /* 容器顶部对齐 */
+    height: 400px; /* 高度设置 */
+    padding-left: 7px; /* 左内边距 */
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景色 */
+    backdrop-filter: blur(4px); /* 背景模糊效果 */
+    border-radius: 20px; /* 圆角边框 */
+    margin: 0% 5% 5% 5%; /* 外边距设置 */
+}
+
+/* 列表样式定义 */
+list {
+    flex-direction: row; /* 子元素水平排列 */
+}
+
+/* 单个天气信息容器样式 */
+.item {
+    flex-direction: column; /* 子元素垂直排列 */
+}
+
+/* 容器内 text 元素的样式 */
+.item > text {
+    padding-bottom: 10px; /* 下内边距 */
+    width: 100%; /* 宽度占满 */
+    text-align: center; /* 文本居中对齐 */
+    line-height: 43px; /* 行高设置 */
+}
+
+/* 容器内 image 元素的样式 */
+.item > image {
+    fit-original-size: true; /* 保持原始尺寸 */
+    margin-top: 10px; /* 上边距 */
+    width: 50px;        /* 设置固定宽度 */
+    height: 50px;       /* 设置固定高度 */
+    margin: auto;/* 上下左右都自动，实现居中 */
+}
+
+/* 列表项的宽度设置 */
+list-item {
+    width: 20%; /* 宽度设置为父元素的20% */
+}

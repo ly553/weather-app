@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="header">
+        <text class="city-name">{{ cityName }} - 生活指数详情</text>
+        <text class="weather-info">{{ currentWeather }} {{ currentTemp }}°C</text>
+        <text class="update-time">更新: {{ updateTime }}</text>
+    </div>
+
+    <list class="living-index-list">
+        <list-item for="{{ suggestion }}" class="index-item">
+            <div class="index-card">
+                <text class="index-name">{{ $item.name }}</text>
+                <text class="index-brief">指数: {{ $item.brief }}</text>
+                <text class="index-detail">建议: {{ $item.detail }}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

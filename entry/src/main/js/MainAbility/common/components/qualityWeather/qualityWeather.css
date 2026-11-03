@@ -1,0 +1,88 @@
+/* 外层容器的样式，定义了圆角、背景色和模糊效果 */
+.container {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    border-radius: 20px; /* 圆角边框 */
+    background-color: rgba(225, 225, 225, 0.5); /* 半透明背景色 */
+    backdrop-filter: blur(4px); /* 背景模糊效果 */
+    margin: 1% 5% 1% 5%; /* 外边距 */
+}
+
+/* 空气质量标题的样式 */
+.title {
+    font-size: 38px; /* 字体大小 */
+    text-align: left; /* 左对齐文本 */
+    width: 100%; /* 宽度占满 */
+    margin: 20px; /* 外边距 */
+}
+
+/* 外围环形指示器部分的样式 */
+.outside {
+    position: relative; /* 相对定位 */
+    width: 200px; /* 宽度 */
+    height: 200px; /* 高度 */
+}
+
+/* 环形指示器内部的文本显示区的样式 */
+.inside {
+    position: absolute; /* 绝对定位 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column;
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    width: 100px; /* 宽度 */
+    height: 100px; /* 高度 */
+    left: 50%; /* 水平居中 */
+    top: 50%; /* 垂直居中 */
+    transform: translate(-50%, -50%); /* 偏移以确保准确居中 */
+}
+
+/* 空气质量级别文本的样式 */
+.big {
+    font-size: 60px; /* 字体大小 */
+}
+
+/* 环形指示器的样式 */
+.data-gauge {
+    width: 100%; /* 宽度 */
+    height: 100%; /* 高度 */
+/* 下面是指示器的颜色和权重配置 */
+}
+
+/* 主要内容区域的布局样式 */
+.content {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: row; /* 子元素水平排列 */
+}
+
+/* 网格布局样式 */
+.grid {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    width: 60%; /* 宽度 */
+}
+
+/* 污染物数据行的样式 */
+.row {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: row; /* 子元素水平排列 */
+}
+
+/* 污染物数据列的样式 */
+.col {
+    width: 50%; /* 宽度 */
+}
+
+/* 污染物数据文本的样式 */
+.col > text {
+    line-height: 55px; /* 行高 */
+    width: 50%; /* 宽度 */
+    text-align: center; /* 文本居中对齐 */
+}
+
+/* 最后一个文本元素的样式 */
+text:last-child {
+    text-align: center; /* 文本居中对齐 */
+}

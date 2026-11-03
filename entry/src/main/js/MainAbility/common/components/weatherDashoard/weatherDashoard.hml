@@ -1,0 +1,19 @@
+<!-- 引入子组件：风向指示、降雨量计数器和感知列表 -->
+<element name="windPointer" src="../../components/WindPointer/WindPointer.hml"></element>
+<element name="rainCount" src="../../components/rainCounter/rainCounter.hml"></element>
+<element name="feel" src="../../components/senseList/senseList.hml"></element>
+
+<!-- 综合气象展示板的行容器，用于水平排列子组件 -->
+<div class="row">
+<!-- 列容器，用于垂直排列风向和降雨量组件 -->
+    <div class="col">
+    <!-- 风向指示组件，传递天气数据 -->
+        <windpointer weather-data="{{ weatherData }}"></windpointer>
+
+    <!-- 降雨量计数器组件，传递天气数据 -->
+        <raincount weather-data="{{ weatherData }}"></raincount>
+    </div>
+
+<!-- 感知列表组件，显示湿度、体感温度等信息，传递天气数据 -->
+    <feel weather-data="{{ weatherData }}"></feel>
+</div>

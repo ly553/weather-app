@@ -1,0 +1,20 @@
+/* 实时天气更新板外层容器的样式 */
+.container-end {
+    display: flex; /* 开启 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    width: 100%; /* 宽度占满容器 */
+    height: 7%; /* 高度为容器的7% */
+    margin-top: 10px; /* 上外边距 */
+    margin-bottom: 5px; /* 下外边距 */
+}
+
+/* 显示更新时间和数据来源的文本样式 */
+.end {
+    font-size: 20px; /* 字体大小 */
+    text-align: center; /* 文本居中对齐 */
+    width: 100%; /* 宽度占满容器 */
+    margin: 5px 0; /* 上下外边距 */
+    color: black;
+}

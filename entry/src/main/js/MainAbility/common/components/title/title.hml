@@ -1,0 +1,13 @@
+<!-- 标题组件的容器 -->
+<div class="container">
+<!-- 添加图标的容器 -->
+    <div class="add">
+    <!-- 添加图标的图片 -->
+        <image src="../../img/other/add.png" onclick="selectCity"></image>
+    </div>
+<!-- 显示标题的文本 -->
+    <text class="title">
+        {{ title }}
+    <!-- 数据绑定，显示传入的城市标题 -->
+    </text>
+</div>

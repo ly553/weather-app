@@ -1,0 +1,64 @@
+<!-- 生活指数展示组件的最外层容器 -->
+<div class="targetWeather">
+<!-- 展示组件标题 -->
+    <text class="title">{{ title }}</text>
+
+<!-- 包含所有生活指数图标和文本的盒子 -->
+    <div class="box">
+    <!-- 第一组生活指数：运动、穿衣、紫外线 -->
+        <div class="gr">
+            <div>
+            <!-- 运动指数图标 -->
+                <image src="../../img/live/sport.png"></image>
+            <!-- 运动指数标题 -->
+                <text>运动</text>
+            <!-- 运动指数值 -->
+                <text>{{ exercise }}</text>
+            </div>
+            <div>
+            <!-- 穿衣指数图标 -->
+                <image src="../../img/live/clothes.png"></image>
+            <!-- 穿衣指数标题 -->
+                <text>穿衣</text>
+            <!-- 穿衣指数值 -->
+                <text>{{ dress }}</text>
+            </div>
+            <div>
+            <!-- 紫外线指数图标 -->
+                <image src="../../img/live/light.png"></image>
+            <!-- 紫外线指数标题 -->
+                <text>紫外线</text>
+            <!-- 紫外线指数值 -->
+                <text>{{ sunshine }}</text>
+            </div>
+        </div>
+
+    <!-- 第二组生活指数：感冒、洗车、晾晒 -->
+        <div class="gr">
+            <div>
+            <!-- 感冒指数图标 -->
+                <image src="../../img/live/cold.png"></image>
+            <!-- 感冒指数标题 -->
+                <text>感冒</text>
+            <!-- 感冒指数值 -->
+                <text>{{ cold }}</text>
+            </div>
+            <div>
+            <!-- 洗车指数图标 -->
+                <image src="../../img/live/car_wash.png"></image>
+            <!-- 洗车指数标题 -->
+                <text>洗车</text>
+            <!-- 洗车指数值 -->
+                <text>{{ carWashing }}</text>
+            </div>
+            <div>
+            <!-- 晾晒指数图标 -->
+                <image src="../../img/live/sun-cure.png"></image>
+            <!-- 晾晒指数标题 -->
+                <text>晾晒</text>
+            <!-- 晾晒指数值 -->
+                <text>{{ sun_cure }}</text>
+            </div>
+        </div>
+    </div>
+</div>

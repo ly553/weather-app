@@ -1,0 +1,67 @@
+<!-- 空气质量展示组件的最外层容器 -->
+<div class="container">
+<!-- 空气质量标题 -->
+    <text class="title">{{ title }}</text>
+
+<!-- 主要内容区域 -->
+    <div class="content">
+    <!-- 外围环形指示器部分 -->
+        <div class="outside">
+        <!-- 环形指示器组件，展示空气质量指数的百分比 -->
+            <chart class="data-gauge" type="gauge" percent="{{ percentNumber }}"></chart>
+
+        <!-- 环形指示器内部的文本显示区 -->
+            <div class="inside">
+            <!-- 空气质量级别 -->
+                <text class="big">{{ airQuality }}</text>
+            <!-- 空气质量数值 -->
+                <text>{{ airNumber }}</text>
+            </div>
+        </div>
+
+    <!-- 显示具体污染物数值的网格布局 -->
+        <div class="grid">
+        <!-- 污染物数据的行 -->
+            <div class="row">
+                <div class="col">
+                <!-- PM2.5数值 -->
+                    <text>PM2.5</text>
+                    <text>{{ PM2_5 }}</text>
+                </div>
+                <div class="col">
+                <!-- PM10数值 -->
+                    <text>PM10</text>
+                    <text>{{ PM10 }}</text>
+                </div>
+            </div>
+
+        <!-- 另一行污染物数据 -->
+            <div class="row">
+                <div class="col">
+                <!-- SO₂数值 -->
+                    <text>SO₂</text>
+                    <text>{{ SO2 }}</text>
+                </div>
+                <div class="col">
+                <!-- NO₂数值 -->
+                    <text>NO₂</text>
+                    <text>{{ NO2 }}</text>
+                </div>
+            </div>
+
+        <!-- 第三行污染物数据 -->
+            <div class="row">
+                <div class="col">
+                <!-- CO数值 -->
+                    <text>CO</text>
+                    <text>{{ CO }}</text>
+                </div>
+                <div class="col">
+                <!-- O₃数值 -->
+                    <text>O₃</text>
+                    <text>{{ O3 }}</text>  <!-- 修改为 O3，与JS中的变量名一致 -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

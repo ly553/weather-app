@@ -1,0 +1,50 @@
+/* 天气简要信息容器的样式 */
+.container-number {
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    justify-content: flex-start; /* 在主轴方向靠起始边界对齐 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    left: 0px; /* 容器左对齐 */
+    top: 0px; /* 容器顶部对齐 */
+    width: 100%; /* 宽度占满父元素 */
+    color: white; /* 文本颜色为白色 */
+}
+
+.temp {
+    flex-direction: row; /* 子元素水平排列 */
+    align-items: center; /* 子元素在交叉轴方向居中对齐 */
+    justify-content: center; /* 子元素在主轴方向居中对齐 */
+    width: 50%; /* 宽度为父元素的50% */
+    height: 200px; /* 高度设置为200px */
+}
+
+.title-number {
+    font-size: 180px; /* 字体大小为180px */
+    position: relative; /* 相对定位 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 在交叉轴方向居中对齐 */
+    height: 100%; /* 高度占满父元素 */
+    justify-content: center; /* 在主轴方向居中对齐 */
+}
+
+.C {
+    position: absolute; /* 绝对定位 */
+    top: 0; /* 顶部对齐 */
+    right: 0; /* 右侧对齐 */
+    font-size: 40px; /* 字体大小为40px */
+}
+
+.weather {
+    font-size: 40px; /* 字体大小为40px */
+}
+
+.air {
+    text-color: white; /* 文本颜色为白色 */
+    backdrop-filter: blur(8px); /* 背景模糊滤镜 */
+    background-color: rgba(190, 190, 190, 0.4); /* 背景颜色，带透明度 */
+    border-radius: 30px; /* 边框圆角 */
+    border: rgba(255, 255, 255, 0); /* 边框颜色 */
+    width: 200px; /* 宽度设置为200px */
+    height: 50px; /* 高度设置为50px */
+    margin: 20px; /* 外边距为20px */
+}

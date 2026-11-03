@@ -1,0 +1,20 @@
+<!-- 时刻天气组件的最外层容器，应用圆角和背景色及背景模糊效果 -->
+<div class="time-weather">
+<!-- 定义一个 list，关闭滚动条 -->
+    <list class="timeList" scrollbar="off">
+    <!-- 通过 for 循环动态生成每个时刻的天气信息 -->
+        <list-item for="{{ time }}" clickeffect="false">
+        <!-- 单个时刻的天气信息容器 -->
+            <div class="item">
+            <!-- 显示数据时间 -->
+                <text>{{ $item.data_time }}</text>
+            <!-- 显示天气图片 -->
+                <image src="{{ $item.img }}"></image>
+            <!-- 显示天气情况文本 -->
+                <text>{{ $item.text }}</text>
+            <!-- 显示温度信息 -->
+                <text>{{ $item.temp_fc }}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

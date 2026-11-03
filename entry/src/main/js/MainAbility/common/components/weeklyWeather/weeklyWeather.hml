@@ -1,0 +1,26 @@
+<!-- 整周天气信息的最外层容器 -->
+<div class="container">
+<!-- 列表组件，用于展示一周的天气信息 -->
+    <list>
+    <!-- 列表项，动态生成，$item 是当前循环的天气数据对象 -->
+        <list-item for="{{ day }}" clickeffect="false">
+        <!-- 单个天气信息的容器 -->
+            <div class="item">
+            <!-- 显示星期 -->
+                <text>{{ $item.week }}</text>
+            <!-- 显示白天的天气状况 -->
+                <text>{{ $item.text_day }}</text>
+            <!-- 显示最高温度 -->
+                <text>{{ $item.high }}</text>
+            <!-- 显示天气图标 -->
+                <image src="{{ $item.img }}"></image>
+            <!-- 显示最低温度 -->
+                <text>{{ $item.low }}</text>
+            <!-- 显示风向 -->
+                <text>{{ $item.wd_day }}</text>
+            <!-- 显示风力 -->
+                <text>{{ $item.wc_day }}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

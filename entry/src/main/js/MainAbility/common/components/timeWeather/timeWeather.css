@@ -1,0 +1,45 @@
+/* 时刻天气的外层容器样式 */
+.time-weather {
+    border-radius: 20px; /* 边角的圆度 */
+    background-color: rgba(225, 225, 225, 0.5); /* 半透明背景色 */
+    backdrop-filter: blur(4px); /* 背景模糊滤镜 */
+    margin: 2% 5% 0 5%; /* 外边距 */
+}
+
+/* list 内的 list-item 样式 */
+.timeList list-item {
+    height: 40px; /* 高度 */
+    color: #000; /* 文本颜色 */
+    text-align: center; /* 文本居中对齐 */
+    width: 20%; /* 宽度 */
+}
+
+/* list 样式定义 */
+list {
+    flex-direction: row; /* 子元素水平排列 */
+    height: 260px; /* 高度 */
+}
+
+/* 单个时刻的天气信息容器样式 */
+.item {
+    margin: 6% 5%; /* 外边距 */
+    flex-direction: column; /* 子元素垂直排列 */
+    height: 100%; /* 高度占满 */
+    width: 100%; /* 宽度占满 */
+}
+
+/* item 内 text 的样式 */
+.item text {
+    line-height: 55px; /* 行高 */
+    width: 100%; /* 宽度占满 */
+    align-content: center; /* 内容居中对齐 */
+}
+
+/* item 内 image 的样式 */
+.item image {
+    fit-original-size: true; /* 保持原始尺寸 */
+    margin-top: 10px; /* 上边距 */
+    width: 50px;        /* 设置固定宽度 */
+    height: 50px;       /* 设置固定高度 */
+    margin: auto;/* 上下左右都自动，实现居中 */
+}

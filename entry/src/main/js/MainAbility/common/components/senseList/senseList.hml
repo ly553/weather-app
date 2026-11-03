@@ -1,0 +1,36 @@
+<!-- 舒适度指标展示组件的外层容器 -->
+<div class="container">
+<!-- 列表组件，用于按顺序展示各个舒适度指标 -->
+    <list divider="true">
+    <!-- 湿度指标项 -->
+        <list-item clickeffect="false">
+            <div class="text">
+            <!-- 指标名称 -->
+                <text>湿度:</text>
+            <!-- 指标数值，使用处理后的数据 -->
+                <text>{{ humidity }}</text>
+            </div>
+        </list-item>
+    <!-- 体感温度指标项 -->
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>体感:</text>
+                <text>{{ feelsLike }}</text>
+            </div>
+        </list-item>
+    <!-- 紫外线指数指标项 -->
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>紫外线:</text>
+                <text>{{ uvIndex }}</text>
+            </div>
+        </list-item>
+    <!-- 气压指标项 -->
+        <list-item clickeffect="false">
+            <div class="text">
+                <text>气压:</text>
+                <text>{{ pressureValue }}</text>
+            </div>
+        </list-item>
+    </list>
+</div>

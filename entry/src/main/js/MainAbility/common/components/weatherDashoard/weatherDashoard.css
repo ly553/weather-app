@@ -1,0 +1,14 @@
+/* 行容器样式，用于水平排列子组件 */
+.row {
+    display: flex; /* 开启 flex 布局 */
+    flex-direction: row; /* 子元素水平排列 */
+    margin: 2% 5% 2% 5%; /* 外边距 */
+}
+
+/* 列容器样式，用于垂直排列风向和降雨量组件 */
+.col {
+    display: flex; /* 开启 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    width: 47%; /* 宽度 */
+    margin-right: 6%; /* 右外边距 */
+}

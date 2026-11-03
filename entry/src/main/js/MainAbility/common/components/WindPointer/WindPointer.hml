@@ -1,0 +1,18 @@
+<!-- 风向展示组件的最外层容器 -->
+<div class="container-WindPointer">
+<!-- 容器内部分成两部分：文本和图像 -->
+    <div>
+    <!-- 显示风向和风级的文本 -->
+        <div class="barText">
+        <!-- 风向文本 -->
+            <text class="text1">{{ Wind }}</text>
+        <!-- 风级文本 -->
+            <text class="text2">{{ WindLevel }}</text>
+        </div>
+    <!-- 显示风向图标的区域 -->
+        <div class="bar">
+        <!-- 风向图标图片 -->
+            <image class="photo" src="{{ src }}"></image>
+        </div>
+    </div>
+</div>

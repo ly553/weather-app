@@ -1,0 +1,24 @@
+<!-- 容器用于展示天气的简要信息 -->
+<div class="container-number">
+<!-- 温度信息的容器 -->
+    <div class="temp">
+    <!-- 温度值 -->
+        <text class="title-number">
+            {{ title }}
+        </text>
+    <!-- 温度单位 -->
+        <text class="C">
+            {{ C }}
+        </text>
+    </div>
+<!-- 天气情况 -->
+    <div class="weather">
+        <text>
+            {{ weather }}
+        </text>
+    </div>
+<!-- 空气质量按钮 -->
+    <div>
+        <button class="air" value="{{ air }}"></button>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+/* 容器的样式定义 */
+.container {
+/* 使用弹性盒模型进行布局 */
+    display: flex;
+/* 子元素沿主轴（此处为垂直方向）排列 */
+    flex-direction: column;
+/* 子元素在主轴起点对齐，即顶部 */
+    justify-content: flex-start;
+/* 子元素在交叉轴（此处为水平方向）居中对齐 */
+    align-items: center;
+/* 容器的左边距为 0，用于定位 */
+    left: 0px;
+/* 容器的顶部边距为 0，用于定位 */
+    top: 0px;
+/* 容器宽度为 100%，占满父元素宽度 */
+    width: 100%;
+/* 容器高度为 100%，占满父元素高度 */
+    height: 100%;
+/*!* 容器背景设置为一张天气图片 *!*/
+/*!* 背景图片大小设置为覆盖整个容器 *!*/
+/*    background-size: 100% 100%;*/
+}
+
+.bg{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* 设置标题组件的高度 */
+.title {
+    height: 100px;
+}
+
+/* 原有样式... */
+.number {
+    margin: 175px 0 175px 0;
+}
+
+/* 设置列表宽高及布局方式 */
+.indexList {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* 设置列表每一项的宽度 */
+.indexList > list-item {
+    width: 100%;
+}
+
+/* 设置时刻组件的高度 */
+.timeList {
+    height: 300px;
+}
+.left-area{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.right-area {
+    width: 50%;
+    height: 420px; /* 与左侧总高度匹配 */
+}
+.composite-row{
+    margin-left: 40px;
+}

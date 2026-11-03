@@ -1,0 +1,68 @@
+<!-- 引入 title 组件，定义了组件的名称和源文件的位置 -->
+<element name="title" src="../../common/components/title/title.hml"></element>
+<!-- 引入组件 -->
+<element name="briefWeatherInfo" src="../../common/components/briefWeatherInfo/briefWeatherInfo.hml"></element>
+<element name="timeList" src="../../common/components/timeWeather/timeWeather.hml"></element>
+<element name="weeklyWeather" src="../../common/components/weeklyWeather/weeklyWeather.hml"></element>
+<element name="qualityWeather" src="../../common/components/qualityWeather/qualityWeather.hml"></element>
+<element name="livingIndex" src="../../common/components/livingIndex/livingIndex.hml"></element>
+<element name="end" src="../../common/components/end/end.hml"></element>
+<element name="windPointer" src="../../common/components/WindPointer/WindPointer.hml"></element>
+<element name="rainCounter" src="../../common/components/rainCounter/rainCounter.hml"></element>
+<element name="senseList" src="../../common/components/senseList/senseList.hml"></element>
+
+<div class="container">
+    <image src="../../common/img/other/bg1.png" class="bg"></image>
+
+    <div>
+    <!-- 使用 title 组件，并通过 path 属性传递数据 -->
+        <title path="{{ path }}"></title>
+    </div>
+
+    <list class="indexList" scrollpage="true" cachedcount="10">
+        <list-item clickeffect="false" class="number">
+        <!-- 使用 briefWeatherInfo 组件并传递天气数据 -->
+            <briefWeatherInfo temp-data="{{ tempData }}"></briefWeatherInfo>
+        </list-item>
+
+        <list-item clickeffect="false" class="timeList">
+            <timelist hour-data="{{ hourData }}"></timelist>
+        </list-item>
+
+        <list-item clickeffect="false">
+            <weeklyweather weekly-data="{{ weeklyData }}"></weeklyweather>
+        </list-item>
+
+    <!-- 复合信息区域：左右各占50% -->
+        <list-item clickeffect="false" class="composite-row">
+            <div class="composite-container">
+            <!-- 左侧：云量 + 风向 -->
+                <div class="left-area">
+                    <div class="wind-section">
+                        <windpointer weather-data="{{ otherData }}"></windpointer>
+                    </div>
+                    <div class="rain-section">
+                        <raincounter weather-data="{{ otherData }}"></raincounter>
+                    </div>
+                </div>
+
+            <!-- 右侧：体感指数 -->
+                <div class="right-area">
+                    <senselist weather-data="{{ otherData }}"></senselist>
+                </div>
+            </div>
+        </list-item>
+
+        <list-item clickeffect="true" onclick="gotoAQIDetail" type="aqi-detail" class="aqi-item">
+            <qualityweather aqi="{{ airQuality }}"></qualityweather>
+        </list-item>
+
+        <list-item type="living-index" onclick="gotoLivingIndexDetail" clickeffect="true" class="living-index-item">
+            <livingindex suggest="{{ suggestion }}"></livingindex>
+        </list-item>
+
+        <list-item clickeffect="false">
+            <end new-time="{{ time }}"></end>
+        </list-item>
+    </list>
+</div>

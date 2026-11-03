@@ -1,0 +1,50 @@
+/* 最外层容器的样式 */
+.targetWeather {
+    display: flex; /* 开启 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    border-radius: 20px; /* 圆角边框 */
+    background-color: rgba(225, 225, 225, 0.5); /* 半透明背景色 */
+    backdrop-filter: blur(4px); /* 背景模糊效果 */
+    margin: 2% 5% 0 5%; /* 外边距 */
+    height: 450px; /* 高度 */
+}
+
+/* 标题样式 */
+.title {
+    font-size: 38px; /* 字体大小 */
+    text-align: left; /* 文本左对齐 */
+    width: 100%; /* 宽度 */
+    height: 10%; /* 高度 */
+    margin: 20px; /* 外边距 */
+}
+
+/* 包含生活指数的盒子样式 */
+.box {
+    display: flex; /* 开启 flex 布局 */
+    flex-direction: column; /* 子元素垂直排列 */
+    height: 80%; /* 高度 */
+    width: 100%; /* 宽度 */
+}
+
+/* 每组生活指数的样式 */
+.gr {
+    display: flex; /* 开启 flex 布局 */
+    justify-content: space-around; /* 子元素平均分布 */
+    height: 50%; /* 高度 */
+    width: 100%; /* 宽度 */
+}
+
+/* 单个生活指数项的样式 */
+.gr > div {
+    display: flex; /* 开启 flex 布局 */
+    justify-content: center; /* 主轴居中 */
+    align-items: center; /* 交叉轴居中 */
+    flex-direction: column; /* 子元素垂直排列 */
+    width: 33%; /* 宽度 */
+}
+
+/* 生活指数图标的样式 */
+image {
+    width: 60px; /* 宽度 */
+    height: 60px; /* 高度 */
+}

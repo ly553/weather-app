@@ -1,0 +1,81 @@
+<div class="container">
+    <image src="../../common/img/other/bg1.png" class="bg"></image>
+
+    <div class="header">
+        <text class="header-title">空气质量详情</text>
+    </div>
+
+    <div class="content">
+    <!-- 空气质量指数卡片 -->
+        <div class="aqi-card">
+            <text class="aqi-value">{{aqiData.aqi}}</text>
+            <text class="aqi-level">{{aqiData.level}}</text>
+            <text class="aqi-desc">{{aqiData.description}}</text>
+        </div>
+
+    <!-- 污染物详细数据 -->
+        <div class="pollutants-section">
+            <text class="section-title">主要污染物浓度</text>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">PM2.5</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{pm25Percent}}%; background-color: {{getColorByValue(aqiData.pm25)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.pm25}} µg/m³</text>
+                <text class="pollutant-level">{{getPM25Level(aqiData.pm25)}}</text>
+            </div>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">PM10</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{pm10Percent}}%; background-color: {{getColorByValue(aqiData.pm10)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.pm10}} µg/m³</text>
+                <text class="pollutant-level">{{getPM10Level(aqiData.pm10)}}</text>
+            </div>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">NO₂</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{no2Percent}}%; background-color: {{getColorByValue(aqiData.no2)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.no2}} µg/m³</text>
+                <text class="pollutant-level">{{getNO2Level(aqiData.no2)}}</text>
+            </div>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">SO₂</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{so2Percent}}%; background-color: {{getColorByValue(aqiData.so2)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.so2}} µg/m³</text>
+                <text class="pollutant-level">{{getSO2Level(aqiData.so2)}}</text>
+            </div>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">CO</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{coPercent}}%; background-color: {{getColorByValue(aqiData.co)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.co}} mg/m³</text>
+                <text class="pollutant-level">{{getCOLevel(aqiData.co)}}</text>
+            </div>
+
+            <div class="pollutant-item">
+                <text class="pollutant-name">O₃</text>
+                <div class="pollutant-bar">
+                    <div class="bar-fill" style="width: {{o3Percent}}%; background-color: {{getColorByValue(aqiData.o3)}};"></div>
+                </div>
+                <text class="pollutant-value">{{aqiData.o3}} µg/m³</text>
+                <text class="pollutant-level">{{getO3Level(aqiData.o3)}}</text>
+            </div>
+        </div>
+
+    <!-- 健康建议 -->
+        <div class="advice-section">
+            <text class="section-title">健康建议</text>
+            <text class="advice-text">{{healthAdvice}}</text>
+        </div>
+    </div>
+</div>

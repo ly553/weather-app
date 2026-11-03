@@ -1,0 +1,42 @@
+<!-- 城市选择页面 -->
+<div class="container">
+    <image src="../../common/img/other/bg1.png" class="bg"></image>
+
+<!-- 搜索框 -->
+    <div class="search-container">
+        <input class="search-input" placeholder="搜索城市" onchange="searchCity" />
+        <image src="../../common/img/other/search.png" class="search-icon"></image>
+    </div>
+
+<!-- 热门城市列表 -->
+    <div class="hot-cities">
+        <text class="section-title">热门城市</text>
+        <div class="city-grid">
+            <div class="city-item" for="{{hotCities}}" onclick="selectCity({{$item}})">
+                <text>{{$item.name}}</text>
+            </div>
+        </div>
+    </div>
+
+<!-- 全部城市列表（使用list组件实现滚动） -->
+    <div class="all-cities">
+        <text class="section-title">全部城市</text>
+        <list class="city-list" scroller="true">
+            <list-item type="cityGroup" for="{{cityGroups}}">
+                <div class="group-item">
+                    <text class="group-title">{{$item.letter}}</text>
+                    <div class="group-cities">
+                        <div class="city-item" for="{{$item.cities}}" onclick="selectCity({{$item}})">
+                            <text>{{$item.name}}</text>
+                        </div>
+                    </div>
+                </div>
+            </list-item>
+        </list>
+
+    <!-- 添加空状态提示 -->
+        <div class="no-result" if="{{!hasSearchResult}}">
+            <text>未找到相关城市</text>
+        </div>
+    </div>
+</div>

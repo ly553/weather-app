@@ -1,0 +1,29 @@
+/* 容器样式，用于定义加载页面的背景和布局 */
+.container {
+/* 设置背景图片为 loading.gif */
+    background-image: url("/common/img/other/loading.png");
+/* 背景图像充满整个容器 */
+    background-size: 100% 100%;
+/* 容器的子元素将以列的形式垂直排列 */
+    flex-direction: column;
+/* 容器内的元素将在交叉轴上居中对齐 */
+    justify-content: center;
+/* 容器内的元素将在主轴上居中对齐 */
+    align-items: center;
+/* 容器的高度占满父元素 */
+    height: 100%;
+/* 容器的宽度占满父元素 */
+    width: 100%;
+}
+
+/* 进度条样式 */
+.min-progress {
+/* 进度条宽度为 200 像素 */
+    width: 200px;
+/* 进度条高度为 200 像素 */
+    height: 200px;
+/* 进度条的刻度线宽度为 2 像素 */
+    scale-width: 2px;
+/* 进度条的刻度数量为 30 */
+    scale-number: 30;
+}

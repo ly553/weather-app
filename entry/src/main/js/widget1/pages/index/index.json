@@ -1,0 +1,19 @@
+{
+  "data": {
+    "mini": false,
+    "miniTitle": "深圳",
+    "itemTitle": "27°",
+    "itemContent": "多云 · AQI 45 优"
+  },
+  "actions": {
+    "routerEvent": {
+      "action": "router",
+      "abilityName": "com.example.weather.MainAbility",
+      "params": {
+        "message": "openWeatherDetail",
+        "city": "{{city}}",
+        "from": "weather_card"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<div onclick="routerEvent">
+    <div id="wrapper">
+        <div id="mini_container" if="{{mini}}">
+            <text id="mini_title">{{miniTitle}}</text>
+        </div>
+        <div id="normal_container">
+            <div id="items_container">
+                <image id="image" src="/common/bg1.png"></image>
+                <div id="space1"></div>
+                <text id="normal_title">{{itemTitle}}</text>
+                <div id="space2"></div>
+                <text id="normal_content">{{itemContent}}</text>
+            </div>
+        </div>
+    </div>
+</div>
+
